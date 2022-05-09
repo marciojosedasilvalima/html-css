@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../favicon/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Links</title>
+        <style>
+            /* SELETORES PERSONALIZADOS
+                #  = id
+                .  class
+                :  pseudo-class
+                :: Pseudo-elemet
+                >  = clildren(Filho, criança)
+            */
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            a {
+                color: brown;
+                text-decoration: none; /* não sobrinhar o texto */
+                font-weight: bold; /* Negrito */
+            }
+            a:visited {
+                /* Quando clicar no link */
+                color: #5f9b23c4;
+            }
+
+            a:hover {
+                /* Quando passar o Mouse */
+                color: black;
+                text-decoration: underline; /* Sobrinhar o texto */
+            }
+
+            a:active {
+                /* Quando clicar no elemento */
+                color: yellow;
+            }
+
+            .especial {
+                background-color: violet;
+            }
+
+            .especial::before {
+                content: '⇒ ';
+            }
+
+            .especial::after {
+                content: ' ⇐';
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">google</a></li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">youtube</a>
+            </li>
+            <li>
+                <a
+                    href="https://www.cursoemvideo.com"
+                    target="_blank"
+                    class="especial"
+                    >cursoemvideo</a
+                >
+            </li>
+        </ul>
+    </body>
+</html>

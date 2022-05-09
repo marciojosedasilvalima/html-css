@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../favicon/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Exemplo de Hover</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* O sinal de > diz o parágrafo que é filho da div 
+            Vai alterar o parágrafo que esta dentro da div*/
+            div > p {
+                display: none; /* Não mostre nada */
+            }
+
+            div:hover {
+                /* quando passa o mouse na linha o texto vai ficar vermelho */
+                color: red;
+            }
+
+            div:hover > p {
+                /* quando passar o mouse na div o parágrafo vai... */
+                display: block; /* mostrar o texto do parágrafo... */
+                color: white; /* a letra vai ficar branca... */
+                background-color: violet; /* o texto vai ficar rosa e... */
+                width: 300px; /* vai diminuir o tamanho da div */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de Hover</h1>
+        <p>Passe o mouse sobre o texto abaixo</p>
+        <div>
+            Passe o mouse aqui!
+            <p>TEXTO ESCONDIDO...</p>
+        </div>
+        <p>Fim do Exemplo</p>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../favicon/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Modelo de Caixas</title>
+        <style>
+            h1 {
+                /* 
+                box-level ou seja display: block 
+                Pode mudar a caracteristica do elemento usando block ou inline
+                ou ser um misto usando display: inline-block;  
+                */
+                background-color: lightgray;
+
+                height: 300px;
+                width: 300px;
+                /*
+                border-width: 10px;
+                border-style: solid;
+                border-color: darkslategray;
+                Este bloco pode ser substituido por uma linha
+                */
+                border: 10px solid darkslategray;
+
+                /*
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                Tem que ser nesta ordem sentido horário: Em cima, direita, em baixo e esquerda
+                */
+                padding: 10px;
+
+                /*
+                margin-top: 20px;
+                margin-right: 20px;
+                margin-bottom: 40px;
+                margin-left: 20px;
+                Pode ser substituido por uma linha e também centralizar os lados com o "auto"
+                */
+                margin: 20px auto 40px auto;
+
+                /*
+                outline-width: 5px;
+                outline-style: dashed;
+                outline-color: salmon;               
+                */
+                outline: 5px dashed salmon;
+            }
+            a {
+                /* inline-leve ou seja display: inline
+                
+                border-width: 2px;
+                border-style: dashed;
+                border-color: red;                
+                */
+                border: 2px dashed red;
+
+                /*
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                */
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de caixas box-level</h1>
+        <p>
+            Parágrafos também são exemplos de box-level, mas os
+            <a href="#">links são exemplos de caixas inlive-level</a>. vamos ver
+            como tudo isso funciona.
+        </p>
+    </body>
+</html>

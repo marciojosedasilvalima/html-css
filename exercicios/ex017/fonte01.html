@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="imagens/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Fontes em CSS</title>
+        <style>
+            body {
+                /* se não encontrar a fonte arial, procura a helvetica... */
+                font-family: Arial, Helvetica, sans-serif;
+                /* 
+                Medidas abasolutas 
+                px, cm, mm, in(polegada), pt, pc
+                Medidas relativa
+                em, ex, rem, vw, vh, %                
+                Usar px e em
+                16px geralamente = 1em
+                */
+                font-size: 1em;
+            }
+            h1 {
+                /* 
+                font-family: 'work sans', sans-serif;
+                font-weight: bolder;
+                font-size: 3em;
+                font-style: italic;
+
+                shorthand font
+                - Consigo fazer todo comando acima numa linha
+                - seguir a ordem abaixo
+                font-style, font-weight, font-size e font=family                
+                */
+                font: italic bolder 3em 'Work Sans', sans-serif;
+            }
+            h2 {
+                font: bold 2em 'Work Sans';
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Trabalhando com fontes</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            obcaecati, totam reiciendis et aspernatur fugit aliquid? Iure minus
+            ipsum ducimus accusantium excepturi illo a tempore saepe veritatis
+            earum, at ex. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Animi, incidunt. Temporibus facilis nulla nisi quisquam
+            accusantium aut consectetur quae eum totam consequatur, quos
+            officiis harum magnam reprehenderit unde beatae inventore.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            adipisci ipsum odio vitae ab itaque hic. Nostrum neque perspiciatis
+            eligendi consectetur est laborum, consequuntur delectus deserunt
+            aliquid recusandae sit esse!
+        </p>
+
+        <h2>Subtitulo do exercicio</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo beatae
+            nulla similique eveniet expedita saepe at aperiam, error veniam
+            tempore iure quis, repellat fugit tenetur officia debitis, facilis
+            numquam consequatur!
+        </p>
+    </body>
+</html>
