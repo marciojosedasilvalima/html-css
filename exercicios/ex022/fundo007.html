@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+       #container {
+           background-color: blueviolet;
+
+           background-image: url("imagens/target001.png");
+           background-size: 100% 100%; /* centraliza a imagem */
+
+           /* o container por padrão tem o posicionamento relativo */
+           position: relative;            
+           height: 500px;
+           padding: 10px;
+          
+           
+       } 
+
+       #conteudo {
+           background-color: chartreuse;
+
+           background-image: url("imagens/target001.png");
+           background-size: 100% 100%;  /* centraliza a imagem */
+           height: 200px;
+           width: 400px;
+
+           /* Quando coloca o posicionamento absolute no elemento deixa
+           alterar as propriedades left e top, para mudar o conteiner de lugar  */
+           position: absolute; 
+           /* Left e top deixam a ponta do conteudo no centro */
+           left: 50%;
+           top:  50%;
+
+           /* Faço uma transformação de translação para deixar o centro do conteudo no centro do container */ 
+           transform: translate(-50%, -50%);
+       }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
