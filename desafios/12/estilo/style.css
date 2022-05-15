@@ -33,16 +33,39 @@ header {
 }
 
 header > h1 {
-    padding-top: 40px;
+    padding-top: 50px;
     font-family: var(--fonte3);
     color: white;
-    font-size: 3em;
+    font-size: 6em;
     font-weight: bold;  
 }
 
 header > p {
     font-family: var(--fonte1);
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+}
+
+section.normal {
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 60px;    
+}
+
+section.imagem {
+
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 60px;    
+}
+
+section > p {
+    font-family: var(--fonte3);  
+    
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: 60px;
+    
 }
 
 footer {
