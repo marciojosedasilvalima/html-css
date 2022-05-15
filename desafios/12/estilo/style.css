@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+:root {
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body { 
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);    
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 40px;
+    font-family: var(--fonte3);
+    color: white;
+    font-size: 3em;
+    font-weight: bold;  
+}
+
+header > p {
+    font-family: var(--fonte1);
+    padding-bottom: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+}

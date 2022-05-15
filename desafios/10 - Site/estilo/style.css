@@ -20,7 +20,8 @@
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
 }
-/*  o * quer dizer todos os elementos */
+
+/*  o * quer dizer todos os elementos. */
 * {
     margin: 0px;
     padding:0px;
