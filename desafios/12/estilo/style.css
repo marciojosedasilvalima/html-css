@@ -54,6 +54,11 @@ section.normal {
 
 section#img1 {
     background-image: url("../imagens/background001.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: 
+    ;
 }
 
 section#img2 {
