@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* Obrigatório para o cabeçalho ficar na tela ao rolar a tabela*/
         }
 
         td, th {
@@ -21,9 +22,35 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color:#383838;
             color: white;
+        }
+
+        /* Faz o cabeçalho ficar visível na tela ao rolar a tabela */
+        thead > tr > th {
+            position: sticky; /* Cola, gruda */
+            top: -1px; /* Vai colar na posição do topo */ 
+            background-color: #383838;
+        }
+        /* 
+        :nth-child() => zebra a tabela
+        Opções:
+         2n-1 - linha sim, linha não mas começa da primeira
+         2n - linha sim, linha não mas começa da segunda
+         3n - De 3 em 3 linhas
+         even - zebra as linhas pares 
+         odd - zebra as linhas impares                
+        */
+        tbody > tr:nth-child(2n-1) {
+           background-color: lightgray; 
         }
 
         td.num {
@@ -36,6 +63,7 @@
     <h1>Uso de tabelas grandes</h1>    
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
+        CAPTION
         TABLE
             THEAD
                TR, TD, TH
@@ -46,10 +74,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>  <!--Cabeça-->
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
+            <tr> <!--scope="col" quer dizer que os dados relacionados a este campo esta na mesma coluna-->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 80px;">População</th>
             </tr>
         </thead>
 
@@ -77,8 +106,8 @@
         </tbody>
 
         <tfoot> <!--Rodapé-->
-            <tr>
-                <th>Total de habitantes</th> <!--Título-->
+            <tr>  <!--scope="row" quer dizer que os dados relacionados a este campo esta na mesma linha-->
+                <th scope="row">Total de habitantes</th> <!--Título-->
                 <td class="num"><strong>110.659.804</strong></td> <!--Dados-->
             </tr>
         </tfoot>
