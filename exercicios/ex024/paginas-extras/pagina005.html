@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clique em mim!</a>
+    <div id="sadia"></div>
+
+    <script>
+        function clicou() {
+            var resp = window.document.getElementById(`saida`)
+          //  s.innerHTML += 'Você clicou!</p>'          
+          resp.innerHTML = `Você tem ${idade} anos.`
+        }
+    </script>
+</body>
+</html>

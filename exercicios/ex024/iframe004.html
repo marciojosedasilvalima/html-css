@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi corrupti id quisquam, minus eveniet perspiciatis voluptate quia consectetur iure quo ipsum. Sit similique blanditiis magni porro aperiam enim quaerat.</p>
+    
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe>
+        
+    <!--
+        sandbox="sandbox" -> Segurança máxima não deixa cadastrar
+        referrerpolicy="no-referrer -> não vai deixar coletar os dados dígitados do conteudo dentro do Iframe 
+        sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer" -> Deixa cadastrar conteúdo de mesma origem, formulários e scripts
+        Assim deixando cadastrar o usuário
+    -->
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto saepe velit ipsam tempora quaerat libero laboriosam, illum earum provident in, sint dolores perspiciatis voluptate vitae! Dicta labore possimus ab.</p>
+</body>
+</html>
