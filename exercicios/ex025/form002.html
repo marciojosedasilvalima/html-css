@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Teste de Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Autocomplete - Desliga a sugestão dos campos input/caixa-->
+        <p>
+            <label for="idusu">Usuário:</label>
+            <input type="text" name="usu" id="idusu" required minlength="5" maxlength="15" size="17" placeholder="Nome do usuário" autocomplete="username">   
+            <!--required - Campo obrigatório-->
+            <!--minlength - Minimo de caracteres-->         
+            <!--Size tamanho da caixa/input-->
+            <!--placeholder - Escreve o texto dentro da caixa/input-->
+            <!--Autocomplete especifico para uma caixa/input-->
+        </p>
+        <p>
+            <label for="idsen">Senha:</label>
+            <input type="password" name="sen" id="idsen" required minlength="8" maxlength="15" size="15" placeholder="Mínimo 8 digítos" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
