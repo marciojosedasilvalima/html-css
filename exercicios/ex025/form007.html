@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="idest">Estado:</label>
+            <select name="estado" id="idest">
+                <option value="" selected>-- Escolhar --</option>
+                <!--"selected" escolhe a opção que vai aparecer ao abrir-->
+                <!--"value" será o que vai ser enviado-->
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernanbuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="idprof">Profissão</label>
+            <input type="text" name="prof" id="idprof" list="lstprof">
+            <!--"list" quer dizer que vai mostrar a lista-->
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="idmsg">Mensagem</label><br>
+            <textarea name="msg" id="idmsg" cols="30" rows="10"></textarea>
+            <!--cols = colunas e rows = linhas, server para delimitar como irá aparecer-->
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>    
+</body>
+</html>
