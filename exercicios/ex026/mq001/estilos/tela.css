@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Estilo para tela */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgba(128, 128, 128, 0.781);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none; /* Tira a bolinha da lista */
+    background-color: gray;
+}
+
+menu li {
+    background-color: rgb(87, 91, 95);
+    color: white;
+    display: inline-block; /* Deixa a lista na horizontal */    
+    padding: 10px;
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto; /* Deixa no centro da tela */
+}
